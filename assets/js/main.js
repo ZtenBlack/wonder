@@ -79,7 +79,7 @@ $(document).ready(function () {
         fireBoxImage.addClass('active');
         setTimeout(() => {
             fireBoxImage.hide();
-        }, 3000);
+        }, 1600);
         const allBoxes = $('.welcome__box');
         allBoxes.not(clickedBox).addClass('hidden');
         $('.page__welcome').addClass('no-bg');
