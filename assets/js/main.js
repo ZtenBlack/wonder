@@ -1,18 +1,18 @@
 $(document).ready(function () {
     //getting the gtag value
-    // const params = new URLSearchParams(window.location.search);
-    // let qtag = params.get('qtag');
-    // if (qtag) {
-    //     sessionStorage.setItem('qtag', qtag);
-    // } else {
-    //     qtag = sessionStorage.getItem('qtag');
-    // }
-    // if (qtag) {
-    //     const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}`;
-    //     const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}&signup=false`;
-    //     $('.modal__content-link').attr('href', newUrl);
-    //     console.log(newUrl);
-    // }
+    const params = new URLSearchParams(window.location.search);
+    let qtag = params.get('qtag');
+    if (qtag) {
+        sessionStorage.setItem('qtag', qtag);
+    } else {
+        qtag = sessionStorage.getItem('qtag');
+    }
+    if (qtag) {
+        const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}`;
+        //const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}&signup=false`;
+        $('.modal__content-link').attr('href', newUrl);
+        console.log(newUrl);
+    }
     //language selection code
     // const accessKey = 'd52fa6bf-a8a9-46c3-b195-2fcda479a705';
     // if (!sessionStorage.getItem('countryChecked')) {
